@@ -1,0 +1,6 @@
+<h1>The Task is: <%= @task.title %> </h1>
+<%= @task.details %>
+<p>----------------------------------------------</p>
+<%= link_to "Volver a lista de tareas.", tasks_path %> ||
+<%= link_to "Editar Tarea", edit_path %> ||
+<%= button_to "Borrar", task_path(@task), method: :delete %>
